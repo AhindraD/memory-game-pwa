@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(./bgPattern.png);
+    background-image: url(./bgPattern1.jpg);
     background-repeat: repeat;
     font-family: 'Inter', sans-serif;
 }
@@ -23,9 +23,9 @@ body {
 }
 
 .heading {
-    font-size: 30px;
+    font-size: 39px;
     font-weight: 700;
-    -webkit-text-stroke: 0.6px #00bbff;
+    text-shadow: 0.5px 0.5px 2px #00bbff;
 }
 
 .stats {
@@ -34,28 +34,38 @@ body {
     font-weight: 500;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 700;
     color: rgba(3, 2, 78, 0.669);
 }
 
 .stats b {
     color: #00db50;
-    font-size: 17px;
+    font-size: 21px;
+}
+
+.stats p {
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(3, 46, 17, 0.76);
+    cursor: pointer;
 }
 
 .restart {
-    width: 80px;
-    height: 30px;
+    padding: 5px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #388354;
-    color: white;
+    background-color: white;
+    color: #00c247;
     font-family: 'Inter', sans-serif;
     border-radius: 5px;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: bolder;
     border: none;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.646);
+    cursor: pointer;
 }
 
 .board {
@@ -86,6 +96,10 @@ body {
     align-items: center;
 }
 
+.square {
+    cursor: pointer;
+}
+
 .flipped {
     background-color: #f6fcb4;
 }
@@ -112,11 +126,21 @@ body {
 }
 
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:400px) {
 
     .board {
-            height: 325px;
-            width: 325px;
+        height: 325px;
+        width: 325px;
+    }
+
+    .stats p {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .stats b,
+    .restart {
+        font-size: 13px;
     }
 
     .square,
@@ -130,5 +154,17 @@ body {
         height: 35px;
         width: 35px;
         object-fit: cover;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:600px) {
+    .stats p {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .stats b,
+    .restart {
+        font-size: 13px;
     }
 }
