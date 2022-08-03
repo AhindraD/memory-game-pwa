@@ -7,8 +7,8 @@
 }
 
 body {
-    background-image: url(./bgPattern1.jpg);
-    background-repeat: repeat;
+    background: url(./bgPattern1.png) no-repeat;
+    background-size: cover;
     font-family: 'Inter', sans-serif;
 }
 
@@ -134,13 +134,17 @@ body {
     }
 
     .stats p {
-        font-size: 11px;
+        font-size: 12px;
         padding: 5px 10px;
     }
 
     .stats b,
     .restart {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .restart {
+        padding: 5px 10px;
     }
 
     .square,
